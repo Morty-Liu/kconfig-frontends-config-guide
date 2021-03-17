@@ -33,10 +33,12 @@ decompres  kconfig-frontends
 ``autoheader`` 
 ``libtoolize --automake --copy --debug --force`` 用途不详，但是有必要执行成功
 ``automake --add-missing`` generate Makefile.in based on Makefile.am //根据Makefile.am　和系统环境 产生 Makefile.in
-``autoreconf –f –i –Wall,no–obsolete`` 用途不详; 完成到这一步就可以使用./configure 开始正常的安装流程了
+``autoreconf –f –i –Wall,no–obsolete`` 用途不详; 完成到这一步就可以使用./configure 开始正常的安装流程了 如果运行不正常 可以使用 ``autoreconf`` 
 
 ``./configure``
 ``make``
 ``make install``
+
+中途会缺少库文件，只能却啥补啥了
 
  gem 是一个包管理框架，brew是一个软件包管理工具
